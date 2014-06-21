@@ -1,0 +1,18 @@
+{
+    "name": "CC98 Reply Improved",
+    "version": "0.9.7.1",
+    "description":  "改进版的CC98快速回复/引用/编辑功能",
+    "update_url": "https://raw.github.com/dangoakachan/cc98/master/reply_improved/updates.xml",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://localhost/cc98/test_cc98.htm",
+                "http://www.cc98.org/dispbbs.asp*", 
+                "http://10.10.98.98/dispbbs.asp*"
+            ],
+            "js": ["jquery.min.js", "lscache.js", "reply_improved.user.js"],
+            "css": ["rim.css"],
+            "run_at": "document_end"
+        }
+    ]
+}
